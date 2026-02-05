@@ -112,11 +112,19 @@ a:hover {
   background: rgba(255, 255, 255, 0.06);
 }
 
+button.btn,
+button.btn-ghost {
+  appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
+  font: inherit;
+}
+
 .hero {
   display: grid;
   gap: 18px;
   grid-template-columns: 1.6fr 1fr;
-  padding: 48px 0 24px;
+  padding: 56px 0 28px;
 }
 
 @media (max-width: 900px) {
@@ -133,7 +141,7 @@ a:hover {
 
 .lead {
   margin: 0 0 16px;
-  color: var(--muted);
+  color: rgba(156, 163, 175, 0.95);
   font-size: 1.05rem;
 }
 
@@ -225,6 +233,13 @@ a:hover {
   color: var(--muted);
 }
 
+.kicker {
+  margin: 0 0 12px;
+  color: rgba(229, 231, 235, 0.92);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
 .meta {
   margin: 0 0 14px;
   padding-left: 18px;
@@ -255,4 +270,81 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+}
+
+.app-modal[hidden] {
+  display: none;
+}
+
+.app-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  opacity: 0;
+  transition: opacity 140ms ease;
+}
+
+.app-modal.is-open {
+  opacity: 1;
+}
+
+.app-modal__panel {
+  position: relative;
+  width: min(980px, calc(100% - 24px));
+  height: min(680px, calc(100% - 24px));
+  margin: 12px auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(17, 24, 39, 0.92);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  transform: translateY(8px) scale(0.985);
+  transition: transform 160ms ease;
+}
+
+.app-modal.is-open .app-modal__panel {
+  transform: translateY(0) scale(1);
+}
+
+/* While iframe is loading, avoid a harsh white flash */
+.app-modal.is-loading .app-modal__frame {
+  opacity: 0;
+}
+
+.app-modal__frame {
+  opacity: 1;
+  transition: opacity 120ms ease;
+}
+
+.app-modal__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.app-modal__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-modal__title {
+  font-weight: 700;
+}
+
+.app-modal__actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.app-modal__frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
 }

@@ -15,5 +15,5 @@ QA Automation Engineer focused on reliable end-to-end testing.
 - Front-end practice projects that feel like real internal tools
 
 ### Contact
-- LinkedIn: (https://www.linkedin.com/in/allison-vo-26b8aa97/)
-- Email: allie_vo@hotmail.com
+- LinkedIn: [Allison Vo](https://www.linkedin.com/in/allison-vo-26b8aa97/)
+- Email: [allie_vo@hotmail.com](mailto:allie_vo@hotmail.com)
