@@ -140,9 +140,10 @@ button.btn-ghost {
 }
 
 .lead {
-  margin: 0 0 16px;
+  margin: 15px 0 16px;
   color: rgba(156, 163, 175, 0.95);
   font-size: 1.05rem;
+  font-weight: bolder;
 }
 
 .hero-cta {

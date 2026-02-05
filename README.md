@@ -2,7 +2,7 @@
 QA Automation Engineer focused on reliable end-to-end testing.
 
 - 🧪 Automation: Playwright, Maestro (and a bit of Detox)
-- 🌐 Web: JavaScript, HTML/CSS — learning React next
+- 🌐 Web: Learning JavaScript, HTML/CSS (learning React next)
 - 🛠️ I like clean test design, stable selectors, and debuggable workflows
 - 🚀 Currently building: a GitHub Pages portfolio + small test/tool demos
 
