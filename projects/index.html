@@ -25,11 +25,12 @@
       <section class="section">
         <h1 style="margin: 0 0 8px;">Projects</h1>
         <p class="lead">A few small, real builds. More coming as I learn</p>
-
         <div class="grid">
           <article class="project">
-            <h3>Starship Console (prototype)</h3>
-            <p>Ship-themed life management dashboard concept. Early build—design + navigation coming first.</p>
+            <h3>Daily Focus Console (prototype)</h3>
+            <p>Prototype life dashboard built as a learning project. I'm iterating in small, testable increments
+              (structure,
+              navigation, data flows) and plan to add Playwright automation for key user journeys.</p>
             <ul class="meta">
               <li>HTML/CSS</li>
               <li>JavaScript</li>
@@ -57,7 +58,7 @@
             </ul>
             <div class="project-links">
               <a class="btn" href="/projects/calculator/" data-app="/projects/calculator/" data-title="Calculator">
-                Launch Demo
+                Demo
               </a>
 
               <a class="btn btn-ghost"
@@ -79,7 +80,7 @@
             <div class="project-links">
               <a class="btn" href="/projects/rock-paper-scissors/" data-app="/projects/rock-paper-scissors/"
                 data-title="Rock, Paper, Scissors">
-                Launch Demo
+                Demo
               </a>
 
               <a class="btn btn-ghost"
@@ -88,6 +89,32 @@
                 Code
               </a>
             </div>
+          </article>
+        </div>
+
+        <p class="lead">Automation roadmap</p>
+        <div class="grid">
+          <article class="project">
+            <h3>Playwright automation (future work)</h3>
+            <p class="lead">Planned Playwright coverage for Daily Focus Console (as I build features).</p>
+            <ul class="bullets">
+              <li>Define 5-8 core user journeys (smoke + regression)</li>
+              <li>Add stable selectors (data-testid) to key UI</li>
+              <li>Set up Playwright structure + helpers</li>
+              <li>HTML report + screenshot-on-failure</li>
+              <li>Optional: GitHub Actions run on PR</li>
+            </ul>
+          </article>
+
+          <article class="project">
+            <h3>Maestro automation (future work)</h3>
+            <p class="lead">Maestro example to be identified (TBD)</p>
+            <ul class="bullets">
+              <li>Identify 5-8 core user journeys (smoke + regression) based on risk and frequency</li>
+              <li>Define a stable selector strategy (accessibility labels / test IDs) to reduce flakiness</li>
+              <li>Capture failure artifacts (screenshots + logs) to speed up debugging</li>
+              <li>Keep flows easy to navigate with consistent naming</li>
+            </ul>
           </article>
         </div>
       </section>
